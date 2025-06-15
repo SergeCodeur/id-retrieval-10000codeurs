@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Récupération de l'ID Unique - 10 000 Codeurs</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+	<div class="floating-particles"></div>
+
+	<div class="container">
+		<div class="content-wrapper">
+			<!-- Section gauche - Informations -->
+			<div class="info-section">
+				<div class="logo-wrap">
+					<img src="/images/10000CodeursLogo.png" alt="Logo 10 000 Codeurs" class="logo-10k" loading="lazy">
+				</div>
+				<div class="info-content">
+					<h1 class="info-title">Récupération d'ID</h1>
+					<p class="info-subtitle">
+						Retrouvez facilement votre identifiant unique 10 000 Codeurs
+					</p>
+					<ul class="info-features">
+						<li>Recherche instantanée</li>
+						<li>Envoi par e-mail optionnel</li>
+						<li>100% sécurisé</li>
+					</ul>
+				</div>
+			</div>
+
+			<!-- Section droite - Formulaire -->
+			<div class="form-section">
+				<h2 class="form-title">Entrez vos informations</h2>
+				<p class="form-subtitle">
+					Saisissez l'adresse e-mail utilisée lors de votre inscription
+				</p>
+
+				<form id="id-form" autocomplete="off">
+					<div class="form-group">
+						<label for="email">Adresse e-mail</label>
+						<div class="input-wrapper">
+							<span class="input-icon">📧</span>
+							<input type="email" id="email" name="email" required placeholder="exemple@email.com" autocomplete="email">
+						</div>
+					</div>
+
+					<div class="checkbox-wrapper">
+						<input type="checkbox" id="sendMail" name="sendMail">
+						<label for="sendMail">M'envoyer l'ID par e-mail</label>
+					</div>
+
+					<button type="submit" class="submit-btn">
+						<span class="btn-text">Rechercher mon ID</span>
+					</button>
+				</form>
+
+				<!-- Résultat en overlay -->
+				<div id="result" class="result">
+					<button class="close-btn" title="Fermer" onclick="closeResult()">&times;</button>
+					<div id="result-content"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="js/script.js"></script>
+</body>
+
+</html>
