@@ -1,5 +1,6 @@
 // Configuration
-const WEBHOOK_URL = process.env.WEBHOOK_URL;
+const WEBHOOK_URL =
+  "https://n8n.srv851807.hstgr.cloud/webhook/c8e5598e-7bc3-4963-baee-eeb2849408e0";
 
 // Éléments DOM
 const form = document.getElementById("id-form");
